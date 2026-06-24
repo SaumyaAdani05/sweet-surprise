@@ -3,10 +3,11 @@ import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/toaster';
+import { AppProvider } from '@/context/AppContext';
 
 export const metadata: Metadata = {
-  title: 'Sweet Delights Bakery',
-  description: 'Delicious handcrafted bakery items.',
+  title: 'Sweet Surprise | Bakery & Custom Gifting',
+  description: 'Premium cakes, handmade chocolates, gourmet cookies, and customized trousseau packing & bouquets.',
 };
 
 export default function RootLayout({
@@ -23,10 +24,12 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased flex flex-col min-h-screen">
-        <Header />
-        <main className="flex-grow">{children}</main>
-        <Footer />
-        <Toaster />
+        <AppProvider>
+          <Header />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+          <Toaster />
+        </AppProvider>
       </body>
     </html>
   );

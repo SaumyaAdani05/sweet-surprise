@@ -3,7 +3,7 @@ export default function PrivacyPage() {
     <div className="container mx-auto px-4 py-16">
       <h1 className="text-3xl font-bold mb-8 font-headline">Privacy Policy</h1>
       <div className="space-y-4 text-muted-foreground">
-        <p>Your privacy is important to us. It is Sweet Delights Bakery's policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.</p>
+        <p>Your privacy is important to us. It is Sweet Surprise's policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.</p>
         <p>We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.</p>
         <p>We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we’ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification.</p>
         <p>We don’t share any personally identifying information publicly or with third-parties, except when required to by law.</p>
@@ -13,7 +13,6 @@ export default function PrivacyPage() {
         <h2 className="text-2xl font-semibold mt-6 mb-3 font-headline text-foreground">More Information</h2>
         <p>Hopefully, that has clarified things for you and as was previously mentioned if there is something that you aren't sure whether you need or not it's usually safer to leave cookies enabled in case it does interact with one of the features you use on our site.</p>
         <p>This policy is effective as of 1 January 2024.</p>
-        <p className="mt-8">This is a placeholder Privacy Policy page. Please replace this with your own policy.</p>
       </div>
     </div>
   );
