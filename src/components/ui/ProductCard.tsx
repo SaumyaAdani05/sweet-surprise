@@ -11,9 +11,12 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ product }: ProductCardProps) => {
+  const isGifting = product.category === 'packing_bouquets' || product.category === 'customization';
+  const href = isGifting ? '/#contact' : `/products/${product.id}`;
+
   return (
     <Link 
-      href="#" 
+      href={href} 
       className="block group outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-lg"
     >
       <Card className="overflow-hidden shadow-md group-hover:shadow-xl group-hover:scale-105 transition-all duration-300 ease-in-out h-full flex flex-col rounded-lg border">
@@ -27,8 +30,10 @@ const ProductCard = ({ product }: ProductCardProps) => {
             data-ai-hint={product.imageHint || product.category}
           />
           {product.price && (
-            <Badge variant="secondary" className="absolute top-2 right-2 text-sm py-1 px-2 shadow-md bg-background/80 backdrop-blur-sm">
+            <Badge variant="secondary" className="absolute top-2 right-2 text-sm py-1 px-2 shadow-md bg-background/80 backdrop-blur-sm font-semibold">
               {product.price}
+              {product.category === 'cakes' && <span className="text-[10px] text-muted-foreground font-normal"> / 500g</span>}
+              {product.category === 'chocolates' && <span className="text-[10px] text-muted-foreground font-normal"> / 250g</span>}
             </Badge>
           )}
         </div>
@@ -40,7 +45,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         </CardContent>
         <CardFooter className="pt-2 pb-4">
           <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-            View Item
+            {isGifting ? 'Inquire Now' : 'View Item'}
             <ArrowRight className="inline h-4 w-4 ml-2 transition-transform group-hover:translate-x-1" />
           </Button>
         </CardFooter>
