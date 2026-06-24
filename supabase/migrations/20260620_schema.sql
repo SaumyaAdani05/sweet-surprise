@@ -389,7 +389,7 @@ values (
   null,
   null,
   '{"provider": "email", "providers": ["email"]}',
-  '{"name": "Rinku Adani", "phone": "9825084514", "address": "Sweet Surprise, Mumbai", "is_admin": true}',
+  '{"name": "Rinku Adani", "phone": "9825084514", "address": "Sweet Surprise, Ahmedabad, Gujarat", "is_admin": true}',
   now(),
   now(),
   '',
@@ -404,7 +404,7 @@ values (
   'a0000000-0000-0000-0000-000000000000',
   'Rinku Adani',
   '9825084514',
-  'Sweet Surprise, Mumbai',
+  'Sweet Surprise, Ahmedabad, Gujarat',
   true
 ) on conflict (id) do update set is_admin = true;
 

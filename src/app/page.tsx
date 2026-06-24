@@ -126,8 +126,8 @@ export default function Home() {
                 <Clock className="w-6 h-6" />
               </div>
               <h3 className="font-headline font-semibold text-lg mb-2">Our Hours</h3>
-              <p className="text-sm text-muted-foreground">Tuesday - Sunday: 9:00 AM - 6:00 PM</p>
-              <p className="text-xs text-primary font-semibold mt-1">Closed on Mondays</p>
+              <p className="text-sm text-muted-foreground">Monday - Saturday: 9:00 AM - 6:00 PM</p>
+              <p className="text-xs text-primary font-semibold mt-1">Closed on Sundays</p>
             </div>
             
             {/* Location */}
@@ -136,7 +136,7 @@ export default function Home() {
                 <MapPin className="w-6 h-6" />
               </div>
               <h3 className="font-headline font-semibold text-lg mb-2">Location</h3>
-              <p className="text-sm text-muted-foreground">Sweet Surprise, Mumbai, India</p>
+              <p className="text-sm text-muted-foreground">Sweet Surprise, Ahmedabad, Gujarat</p>
               <p className="text-xs text-muted-foreground mt-1">Delivery & Pickup Available</p>
             </div>
 
