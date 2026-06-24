@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Facebook, Instagram, Twitter, Mail, Phone, HelpCircle } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Phone, HelpCircle } from 'lucide-react';
 import Logo from '@/components/Logo';
 
 const Footer = () => {
@@ -37,10 +37,6 @@ const Footer = () => {
             <ul className="mt-4 space-y-2 text-sm">
               <li className="text-foreground font-semibold">
                 Owner: Rinku Adani
-              </li>
-              <li className="flex items-center">
-                <Mail className="w-4 h-4 mr-2 text-primary" />
-                <a href="mailto:info@sweetsurprise.com" className="hover:text-primary transition-colors">info@sweetsurprise.com</a>
               </li>
               <li className="flex items-center">
                 <Phone className="w-4 h-4 mr-2 text-primary" />
